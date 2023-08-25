@@ -8,9 +8,8 @@ Meu portfólio é um projeto desenvolvido como parte do desafio Oracle One em pa
 
 O diferencial do meu portfólio está na personalização do design, que foi modificado para refletir minha identidade e estilo pessoal. Adicionei cores, elementos e funcionalidades que tornaram o projeto único. Assim, pude expressar minha criatividade e transmitir minha personalidade através do design do site.
 
-[Visite o projeto online]()
+[Visite o projeto online](https://caazia.github.io/portfolio-Cassia-Carvalho/)
 
-<br><hr><br>
 
 ### Requisitos:
 <ul>
@@ -39,9 +38,9 @@ O diferencial do meu portfólio está na personalização do design, que foi mod
 
 
 ## ✨🎉 Minha Bagde
-![]() 
+![](https://cdn.discordapp.com/attachments/942604194064506920/1144744674687463464/cms_files_10224_1671211659Prancheta_4.png) 
  ❤ ❤ ❤
 
 <br><hr><br>
 
-<div dsplay="inline-block">
+<div dsplay="center">
