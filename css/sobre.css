@@ -1,6 +1,7 @@
 /* SOBRE MIM */
 
 section.sobre {
+    width: 100vw;
     padding: 60px 4%;
     background-color: var(--azul);
 }

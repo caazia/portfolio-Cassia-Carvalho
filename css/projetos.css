@@ -2,7 +2,7 @@
 
 section.projetos {
     padding: 60px 4%;
-    box-shadow: 0 0 40px 10px var(--azul);
+    box-shadow: 0 0 35px 5px var(--azul);
 }
 
 section.projetos .flex {
