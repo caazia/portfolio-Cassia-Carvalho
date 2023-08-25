@@ -1,0 +1,59 @@
+/* SOBRE MIM */
+
+section.sobre {
+    padding: 60px 4%;
+    background-color: var(--azul);
+}
+
+.sobre .txt-sobre {
+    color: var(--black);
+
+}
+
+section.sobre .flex {
+    align-items: center;
+    gap: 60px;
+}
+
+.titulo-sobre {
+    color: var(--black);
+    font-size: 38px;
+    margin-bottom: 30px;
+}
+
+.sobre .txt-sobre p {
+    margin: 25px 0;
+    text-align: justify;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+@media (min-width: 0px) and (max-width: 1200px) {
+    section.sobre {
+        display: flex;
+        padding: 80px 8%;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+       
+    }
+    section.sobre img {
+        width: 380px;
+    }
+    section.sobre .flex {
+        gap: 20px;
+    }
+    .titulo-sobre {
+        font-size: 22px;
+        margin: 2rem;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .sobre .txt-sobre p {
+        font-size: 14px;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin: 2rem;
+    }
+
+}

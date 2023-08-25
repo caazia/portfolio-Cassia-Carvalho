@@ -1,0 +1,114 @@
+/* banner */
+
+section.banner {
+    padding: 40px 4%;
+}
+
+section.banner .flex {
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+
+.flex {
+    display: flex;
+}
+
+.banner h1 {
+    color: var(--black);
+    font-size: 55px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.banner .txt-banner h1 span {
+    color: var(--azul);
+}
+
+.banner .txt-banner p {
+    font-size: 20px;
+    color: var(--black);
+    margin: 40px 0;
+}
+
+section a {
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+    font-weight: 700;
+    color: var(--black);
+}
+
+section a:hover {
+    color: var(--black);
+    transform: scale(1.05);
+}
+
+.banner nav ul {
+    list-style-type: none;
+}
+
+.banner nav ul li {
+    display: inline-block;
+    padding: 0 10px;
+}
+
+.banner .img-banner img {
+    width: 20vw;
+    flex-shrink: 0;
+    border-radius: 368px;
+    box-shadow: 2px 2px 15px var(--azul);
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+@keyframes flutuar {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-30px);
+    }
+}
+
+@media (min-width: 0px) and (max-width: 1200px) {
+
+    .banner h1 {
+        padding: 20px 8%;
+        font-size: 22px;
+    }
+
+    section.banner .flex {
+        padding: 16px;
+        gap: 16px;
+        align-self: stretch;
+    }
+
+    .banner .txt-banner p {
+        font-size: 14px;
+        margin: 15px;
+        text-align: justify;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .banner nav ul {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .banner nav ul li {
+      padding: 5px;
+    }
+
+    .banner .img-banner img {
+       width: 40vw;
+    }
+    
+}

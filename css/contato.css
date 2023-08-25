@@ -1,0 +1,135 @@
+/* CONTATO */
+
+section.contato {
+    padding: 80px 4%;
+}
+
+section.contato .flex {
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+}
+
+section.contato .formulario h2 {
+    color: var(--black);
+    font-size: 38px;
+    text-align: center;
+}
+
+section.contato .formulario p {
+    display: flex;
+    align-items: flex-start;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    gap: 8px;
+    margin-top: 10px;
+}
+
+
+form {
+    max-width: 500px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 40px;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    background-color: #00000032;
+    border: 0;
+    outline: 0;
+    padding: 20px 15px;
+    border-radius: 15px;
+    color: var(--black);
+    font-size: 18px;
+}
+
+form textarea {
+    resize: none;
+    max-height: 200px;
+}
+
+form .btn-enviar {
+    margin-top: 20px;
+    text-align: center;
+}
+
+form .btn-enviar input {
+    width: 200px;
+    background-color: var(--azul);
+    color: var(--white);
+    font-weight: 700;
+    cursor: pointer;
+    transition: .2s;
+}
+
+::-webkit-input-placeholder {
+    color: #f9f8f8;
+}
+
+input:-moz-placeholder {
+    color: #000;
+}
+
+textarea:-moz-placeholder {
+    color: #000;
+}
+
+form .btn-enviar input:hover {
+    box-shadow: 0px 0px 8px #5adbb5;
+    transform: scale(1.05);
+}
+
+
+@media (min-width: 0px) and (max-width: 1200px) {
+
+    section.contato {
+        display: flex;
+        padding: 32px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    section.contato .flex {
+        display: flex;
+        gap: 8px;
+    }
+
+    section.contato .formulario h2 {
+        font-size: 22px;
+    }
+
+    section.contato .formulario p {
+        margin: 20px;
+    }
+
+    form {
+        max-width: 300px;
+        gap: 15px;
+        margin: 20px;
+        padding-left: 10px;
+        padding-right: 10px;
+
+    }
+
+    form input,
+    form textarea {
+        font-size: 16px;
+    }
+
+    form .btn-enviar input {
+        width: 180px;
+    }
+
+    section.contato .flex img {
+        display: none;
+    }
+
+}

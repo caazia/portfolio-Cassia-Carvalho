@@ -1,0 +1,77 @@
+/* Minhas skills */
+
+section.skills {
+    padding: 40px 4%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    align-self: stretch;
+}
+
+section.skills .flex {
+    gap: 60px;
+}
+
+h2.titulo {
+    color: var(--black);
+    font-size: 38px;
+    text-align: center;
+}
+
+h2.titulo span {
+    color: var(--azul);
+}
+
+.skills .skills-box {
+    color: var(--black);
+    padding: 10px;
+    display: flex;
+    width: 200px;
+    height: 200px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border: 2px solid var(--azul);
+    margin-top: 25px;
+    border-radius: 25px;
+    transition: .2s;
+}
+
+.skills .skills-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px var(--azul);
+}
+
+.skills .skills-box h3 {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 15px 0;
+}
+
+@media (min-width: 0px) and (max-width: 1200px) {
+    h2.titulo {
+        font-size: 22px;
+    }
+
+    section.skills {
+        padding: 26px 8%;
+        gap: 32px;
+    }
+
+    section.skills .flex {
+        gap: 20px;
+    }
+    .skills .skills-box {
+        display: flex;
+        height: 118px;
+        width: 118px;
+        padding: 16px;
+        justify-content: flex-end;
+        align-items: flex-start;
+        flex: 1 0 0;
+    }
+}
