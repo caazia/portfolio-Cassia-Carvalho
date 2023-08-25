@@ -38,7 +38,7 @@ O diferencial do meu portfólio está na personalização do design, que foi mod
 
 
 ## ✨🎉 Minha Bagde
-![]() 
+![](https://cdn.discordapp.com/attachments/942604194064506920/1144744674687463464/cms_files_10224_1671211659Prancheta_4.png) 
  ❤ ❤ ❤
 
 <br><hr><br>
