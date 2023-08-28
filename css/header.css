@@ -130,24 +130,6 @@ header .interface {
   gap: 8px;
 }
 
-.botao-mobile {
-  display: flex;
-  justify-content: center;
-  justify-items: center;
-  background-color: var(--light);
-  width: 2rem;
-  height: 2rem;
-  border: none;
-  border-radius: 5rem;
-  align-items: center;
-  padding: .45rem .354rem;
-  cursor: pointer;
-}
-
-.botao-mobile:hover {
-  background-color: var(--azul);
-  transition: 400ms;
-}
 
 /* menu mobile */
 
@@ -204,8 +186,8 @@ header .interface {
   font-size: 17px;
   position: relative;
   display: inline-block;
-  width: 64px;
-  height: 34px;
+  width: 4rem;
+  height: 2.125rem;
 }
 
 .switch input {
@@ -223,17 +205,17 @@ header .interface {
   bottom: 0;
   background-color: #73C0FC;
   transition: .4s;
-  border-radius: 30px;
+  border-radius: 1.875rem;
 }
 
 .slider:before {
   position: absolute;
   content: "";
-  height: 30px;
-  width: 30px;
-  border-radius: 20px;
-  left: 2px;
-  bottom: 2px;
+  height: 1.875rem;
+  width: 1.875rem;
+  border-radius: 1.25rem;
+  left: 0.125rem;
+  bottom: 0.125rem;
   z-index: 2;
   background-color: #e8e8e8;
   transition: .4s;
@@ -241,27 +223,21 @@ header .interface {
 
 .sun svg {
   position: absolute;
-  top: 6px;
-  left: 36px;
+  top: 0.375rem;
+  left: 2.25rem;
   z-index: 1;
-  width: 24px;
-  height: 24px;
+  width: 1.5rem;
+  height: 1.5rem;
 }
 
 .moon svg {
   fill: #73C0FC;
   position: absolute;
-  top: 5px;
-  left: 5px;
+  top: 0.313rem;
+  left: 0.313rem;
   z-index: 1;
-  width: 24px;
-  height: 24px;
-}
-
-/* botao mobile */
-
-.botao-mobile {
-  display: none;
+  width: 1.5rem;
+  height: 1.5rem;
 }
 
 
@@ -314,7 +290,7 @@ header .interface {
 }
 
 .input:checked+.slider:before {
-  transform: translateX(30px);
+  transform: translateX(1.875rem);
 }
 
 @media (min-width: 0px) and (max-width: 1200px) {
@@ -331,11 +307,7 @@ header .interface {
   .banner .flex {
     flex-direction: column-reverse;
   }
-
-  label.switch {
-    display: none;
-  }
-
+  
   /* botao mobile */
   header .interface {
     display: block;
@@ -344,29 +316,5 @@ header .interface {
     justify-items: center;
     gap: 8px;
   }
-
-  .botao-mobile {
-    display: flex;
-    justify-content: center;
-    justify-items: center;
-    background-color: var(--light);
-    width: 2rem;
-    height: 2rem;
-    border: none;
-    border-radius: 5rem;
-    align-items: center;
-    padding: .45rem .354rem;
-    cursor: pointer;
-  }
-  
-  .botao-mobile:hover {
-    background-color: var(--azul);
-    transition: 400ms;
-  
-  }
-
-
-
-
 
 }
