@@ -96,7 +96,7 @@ header nav ul {
   list-style-type: none;
 }
 
-header nav ul li {
+header nav.menu-desktop ul li {
   display: inline-block;
   padding: 0 40px;
 }
@@ -132,53 +132,69 @@ header .interface {
 
 
 /* menu mobile */
+.menu-mobile, .btn-abrir-menu {
+  display: none;
+}
 
-/* PAREI AQUI
+.btn-abrir-menu img {
+  width: 40px;
+}
 
 .menu-mobile {
-  background-color: var(#0000008c);
-  backdrop-filter: blur(10px);
-  position: absolute;
-  top: 77px;
-  left: 0;
-  width: 100%;
+  background-color: var(--azul);
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 99999;
   height: 100vh;
- display: none; 
+  width: 0%;
+  overflow: hidden;
+  transition: .5s;
 }
 
-.menu-mobile nav a {
+.menu-mobile.abrir-menu {
+  width: 70%;
+}
 
-  color: var(#fff);
-  text-decoration: none;
+.menu-mobile.abrir-menu ~ .overlay-menu {
   display: block;
-  padding: 20px 30px;
-  font-size: 16px;
 }
 
-.menu-mobile nav a:hover {
+.menu-mobile .btn-fechar {
+  padding: 25px 5%;
+}
+
+.menu-mobile .btn-fechar img {
+  width: 35px;
+}
+
+.menu-mobile nav ul {
+  text-align: right;
+}
+
+.menu-mobile nav ul li a {
+  color: var(--black);
+  font-size: 20px;
+  font-weight: 300;
+  padding: 20px 8%;
+  display: block;
+}
+
+.menu-mobile nav ul li a:hover {
   background-color: #00000080;
+  color: var(--azul);
 }
 
-.linha {
-  position: relative;
-  height: 3px;
-  background: #fff;
-  width: 25px;
-  display: block;
-  margin: 5px auto;
-  transform-origin: center;
-  transition: .2s;
+.overlay-menu {
+  background-color: rgba(179, 176, 176, 0.593);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 88888;
+  display: none;
 }
-
-#btn-menu.ativar {
-  border: 2px solid red;
-}
-
-#btn-menu.ativar .linha:nth-child(1) {
-  transform: translateY(8px) rotate(-45deg);
-  background-color: red;
-}
-*/
 
 /* switch */
 
@@ -300,6 +316,7 @@ header .interface {
     display: none;
   }
 
+
   .flex {
     flex-direction: column;
   }
@@ -312,9 +329,12 @@ header .interface {
   header .interface {
     display: block;
     display: flex;
-    justify-content: center;
-    justify-items: center;
+    justify-content: space-between;
     gap: 8px;
+  }
+
+  .menu-mobile, .btn-abrir-menu {
+    display: block;
   }
 
 }
