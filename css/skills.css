@@ -52,6 +52,11 @@ h2.titulo span {
     margin: 15px 0;
 }
 
+.skills .skills-box img {
+    width: 50px;
+    
+}
+
 @media (min-width: 0px) and (max-width: 1200px) {
     h2.titulo {
         font-size: 22px;
