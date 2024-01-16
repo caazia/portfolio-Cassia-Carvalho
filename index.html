@@ -245,14 +245,14 @@
                         <p>Quer entrar em contato comigo?<br>
                             Preencha o formulário abaixo e entrarei em contato o mais rápido possível.
                         </p>
-                        <form id="form" action="">
-                            <input type="text" id="nome" placeholder="Digite seu nome completo:" required>
-                            <input type="email" id="email" placeholder="seuemail@dominio.com.br" required>
-                            <input type="tel" pattern="\d{2}\-?\d{5}\-?\d{4}" minlength="11" maxlength="13"
+                        <form method="post" action="envia.php" id="form" action="">
+                            <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo:" required>
+                            <input type="email" id="email" name="email" placeholder="seuemail@dominio.com.br" required>
+                            <input type="tel" name="telefone" pattern="\d{2}\-?\d{5}\-?\d{4}" minlength="11" maxlength="13"
                                 id="telefone" placeholder="Ex.: 11 91234-5678">
-                            <input type="text" minlength="5" id="assunto" placeholder="Assunto" required>
+                            <input type="text" name="assunto" minlength="5" id="assunto" placeholder="Assunto" required>
 
-                            <textarea id="mensagem" 
+                            <textarea id="mensagem" name="mensagem"
                             cols="40" 
                             rows="5" 
                             maxlength="300"
