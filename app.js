@@ -16,6 +16,8 @@ btn.addEventListener('click', () => window.scrollTo({
 
 
 // Validação do formulário
+
+/*
 function validarFormulario() {
     var nome = document.getElementById('nome').value;
     var email = document.getElementById('email').value;
@@ -43,7 +45,7 @@ function validarFormulario() {
 
     return true;
 }
-
+*/
 //botao-menu
 
 let btnMenu = document.getElementById('btn-menu');
