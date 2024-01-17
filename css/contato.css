@@ -38,7 +38,8 @@ form {
 }
 
 form input,
-form textarea {
+form textarea,
+form button {
     width: 100%;
     background-color: #00000032;
     border: 0;
@@ -59,7 +60,7 @@ form .btn-enviar {
     text-align: center;
 }
 
-form .btn-enviar input {
+form .btn-enviar button {
     width: 200px;
     background-color: var(--azul);
     color: var(--white);
@@ -80,7 +81,7 @@ textarea:-moz-placeholder {
     color: #000;
 }
 
-form .btn-enviar input:hover {
+form .btn-enviar button:hover {
     box-shadow: 0px 0px 8px #5adbb5;
     transform: scale(1.05);
 }
@@ -124,7 +125,7 @@ form .btn-enviar input:hover {
         font-size: 16px;
     }
 
-    form .btn-enviar input {
+    form .btn-enviar button {
         width: 180px;
     }
 
