@@ -18,14 +18,15 @@
       <p>Este e-mail foi enviado em <b>$data_envio</b> às <b>$hora_envio</b></p>
     </html>
   ";
+  $destino = "contato.cassia.carvalho@gmail.com";
+  $titulo = "Formulario Portfolio - Contato";
 
   //Para onde será enviado
-    $para = "contato.cassia.carvalho@gmail.com";
-    $titulo = "Mensagem do portfolio - Contato";
+  $cabeca  = "MIME-Version: 1.0\n";
+  $cabeca .= "Content-type: text/html; charset=iso-8859-1\n";
+  $cabeca .= "From: $nome <$email>";
 
-    $cabeca = "From: cahcarvalh@hotmail.com"."\n"."Reply-to: ".$email."\n"."X=Mailer:PHP/".phpversion();
-
-    mail($para,$titulo,$arquivo,$cabeca);
+    mail($destino,$titulo,$arquivo,$cabeca);
     
     echo "<meta http-equiv='refresh' content='10;URL=../contato.html'>";
     
